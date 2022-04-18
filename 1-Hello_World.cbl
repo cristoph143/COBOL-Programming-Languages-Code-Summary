@@ -7,8 +7,16 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO_WORLD.
        DATA DIVISION.
-       FILE SECTION.
        WORKING-STORAGE SECTION.
+       01 NAME PIC X(20).
+       01 AGE PIC 9(2).
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
+       MAIN-DIVISION.
+       100-MAIN.
+          DISPLAY "What is your Name? ".
+          ACCEPT NAME.
+          DISPLAY "How old are you? ".
+          ACCEPT AGE.
+          DISPLAY "HELLO..."Name,"! You're "Age," Old!".
+          DISPLAY "GoodBye! "Name.
        END PROGRAM HELLO_WORLD.
